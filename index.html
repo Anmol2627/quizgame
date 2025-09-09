@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>🧠 Simple Quiz Game</h1>
+        
+        
+        <div class="question-info">
+            <span id="questionNumber">Question 1 of 5</span>
+        </div>
+        
+        
+        <div class="question-box">
+            <h2 id="question">What is 2 + 2?</h2>
+        </div>
+        
+        
+        <div class="answers">
+            <button class="answer-btn" onclick="checkAnswer(0)">3</button>
+            <button class="answer-btn" onclick="checkAnswer(1)">4</button>
+            <button class="answer-btn" onclick="checkAnswer(2)">5</button>
+            <button class="answer-btn" onclick="checkAnswer(3)">6</button>
+        </div>
+        
+        
+        <div id="feedback"></div>
+        
+        
+        <button id="nextBtn" onclick="nextQuestion()" style="display: none;">Next Question</button>
+        
+        
+        <div id="scoreDisplay" style="display: none;">
+            <h2>Quiz Complete! 🎉</h2>
+            <p id="finalScore">Your Score: 0/5</p>
+            <button onclick="restartQuiz()">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
