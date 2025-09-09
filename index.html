@@ -9,32 +9,23 @@
 <body>
     <div class="quiz-container">
         <h1>🧠 Simple Quiz Game</h1>
-        
-        
+
         <div class="question-info">
             <span id="questionNumber">Question 1 of 5</span>
         </div>
-        
-        
+
         <div class="question-box">
-            <h2 id="question">What is 2 + 2?</h2>
+            <h2 id="question">Loading question...</h2>
         </div>
-        
-        
+
         <div class="answers">
-            <button class="answer-btn" onclick="checkAnswer(0)">3</button>
-            <button class="answer-btn" onclick="checkAnswer(1)">4</button>
-            <button class="answer-btn" onclick="checkAnswer(2)">5</button>
-            <button class="answer-btn" onclick="checkAnswer(3)">6</button>
+            <!-- Buttons will be dynamically created here -->
         </div>
-        
-        
+
         <div id="feedback"></div>
-        
-        
+
         <button id="nextBtn" onclick="nextQuestion()" style="display: none;">Next Question</button>
-        
-        
+
         <div id="scoreDisplay" style="display: none;">
             <h2>Quiz Complete! 🎉</h2>
             <p id="finalScore">Your Score: 0/5</p>

@@ -48,9 +48,12 @@ h1 {
 }
 
 .answers {
-    display: grid;
+    
     gap: 10px;
     margin-bottom: 20px;
+      display: flex;
+  flex-direction: column; /* forces buttons to stack vertically */
+  gap: 10px;
 }
 
 .answer-btn {
